@@ -22,6 +22,8 @@ app.use(
 
 //Routes
 app.use('/user', require('./routes/userRouter.js'));
+app.use('/api', require('./routes/categoryRouter.js'));
+//app.use('/api',require('./routes/categoryRouter.js'));
 
 app.get('/', (req, res) => {
   res.json({ msg: 'Hello Server' });
